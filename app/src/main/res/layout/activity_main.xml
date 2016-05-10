@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Android HTTP POST ile mesaj yollama"
+        android:background="#0470d9"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/msj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mesaj: "
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/adsoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/sinif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+
+
+
+    <Button
+        android:id="@+id/gndr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gönder"
+        android:onClick="send"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="göster"
+        android:id="@+id/goster"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView"
+        android:layout_weight="1.12" />
+
+
+</LinearLayout>
